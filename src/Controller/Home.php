@@ -4,16 +4,15 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
-use App\Helper\JsonResponse;
+use App\CustomResponse as Response;
 use Pimple\Psr11\Container;
-use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 
 final class Home
 {
     private const API_NAME = 'slim4-api-skeleton';
 
-    private const API_VERSION = '0.36.0';
+    private const API_VERSION = '0.39.0';
 
     private Container $container;
 
@@ -30,7 +29,7 @@ final class Home
             'timestamp' => time(),
         ];
 
-        return JsonResponse::withJson($response, (string) json_encode($message));
+        return $response->withJson($message);
     }
 
     public function getStatus(Request $request, Response $response): Response
@@ -45,6 +44,6 @@ final class Home
             'timestamp' => time(),
         ];
 
-        return JsonResponse::withJson($response, (string) json_encode($status));
+        return $response->withJson($status);
     }
 }
