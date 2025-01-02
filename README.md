@@ -1,8 +1,7 @@
 # SLIM 4 - API SKELETON
 
-Useful skeleton for RESTful API development, using [Slim PHP micro framework](https://www.slimframework.com).
+Useful skeleton for RESTful API development, using [Slim PHP micro-framework](https://www.slimframework.com).
 
-Used technologies: `PHP 8, Slim 4, MySQL, PHPUnit, dotenv, Docker & Docker Compose`.
 
 [![Software License][ico-license]](LICENSE.md)
 [![Build Status](https://travis-ci.com/maurobonfietti/slim4-api-skeleton.svg?branch=master)](https://travis-ci.com/maurobonfietti/slim4-api-skeleton)
@@ -12,12 +11,25 @@ Used technologies: `PHP 8, Slim 4, MySQL, PHPUnit, dotenv, Docker & Docker Compo
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat
 
 
-## :gear: QUICK INSTALL:
+## 💻 TECHNOLOGIES USED:
+
+The main technologies used in this project are:
+
+- PHP 8
+- Slim 4
+- MySQL
+- PHPUnit
+- dotenv
+- Docker
+- Docker Compose
+
+
+## ⚙️ QUICK INSTALL:
 
 ### Requirements:
 
 - Composer.
-- PHP >= 8.0
+- PHP >= 8.1
 - MySQL/MariaDB.
 - or Docker.
 
@@ -27,16 +39,16 @@ Used technologies: `PHP 8, Slim 4, MySQL, PHPUnit, dotenv, Docker & Docker Compo
 You can create a new project running the following commands:
 
 ```bash
-$ composer create-project maurobonfietti/slim4-api-skeleton [my-api-name]
-$ cd [my-api-name]
-$ composer test
-$ composer start
+composer create-project maurobonfietti/slim4-api-skeleton [my-api-name]
+cd [my-api-name]
+composer test
+composer start
 ```
 
 
 #### Configure your connection to MySQL Server:
 
-By default, the API use a MySQL Database.
+By default, the API uses a MySQL database.
 
 You should check and edit this configuration in your `.env` file:
 
@@ -51,7 +63,7 @@ DB_PORT='3306'
 
 ### With Docker:
 
-If you like Docker, you can use this project with **docker** and **docker-compose**.
+If you like Docker, you can use this project with **Docker** and **Docker Compose**.
 
 
 **Minimal Docker Version:**
@@ -64,17 +76,17 @@ If you like Docker, you can use this project with **docker** and **docker-compos
 
 ```bash
 # Create and start containers for the API.
-$ docker-compose up -d --build
+docker-compose up -d --build
 
 # Checkout the API.
-$ curl http://localhost:8081
+curl http://localhost:8081
 
 # Stop and remove containers.
-$ docker-compose down
+docker-compose down
 ```
 
 
-## :package: DEPENDENCIES:
+## 📦 DEPENDENCIES:
 
 ### LIST OF REQUIRE DEPENDENCIES:
 
@@ -91,7 +103,7 @@ $ docker-compose down
 - [maurobonfietti/slim4-api-skeleton-crud-generator](https://github.com/maurobonfietti/slim4-api-skeleton-crud-generator): CRUD Generator for Slim 4 - Api Skeleton.
 
 
-## :bookmark: ENDPOINTS:
+## 🔖 ENDPOINTS:
 
 ### BY DEFAULT:
 
@@ -100,18 +112,23 @@ $ docker-compose down
 - Health Check: `GET /status`
 
 
-## :video_camera: TUTORIAL:
+## 📹 TUTORIAL:
 
-[Develop a RESTful API with PHP and Slim 4.](https://youtu.be/DetK1w65S-k) [:movie_camera: :sound: :es: :argentina:]
+Learn how to develop a RESTful API with PHP and Slim 4 by following this [video](https://youtu.be/DetK1w65S-k) [🎥 🔈 🇪🇸 🇦🇷]
 
 
-## :heart: WOULD YOU LIKE TO SUPPORT THIS PROJECT?
+https://user-images.githubusercontent.com/24535949/180607903-7efd2cfc-b1df-4ad6-8295-801585df3b83.mp4
 
-You can support this project inviting me a coffee :coffee: :yum: or giving a **star** to this repo :star: :blush:.
+
+## :heart: SUPPORT THE PROJECT
+
+If you would like to support this project, you can:
+- Invite the author a coffee :coffee: :yum:
+- Give a star to the repository :star: :blush:
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/maurobonfietti)
 
 
-## :sunglasses: THAT'S IT!
+## :sunglasses: AND THAT'S IT!
 
-Now go build a cool RESTful API.
+Now, go to build an excellent RESTful API.
